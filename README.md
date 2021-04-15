@@ -1,24 +1,16 @@
-names
+Data dummy generator
 =====
 
-.. image:: https://secure.travis-ci.org/treyhunner/names.png?branch=master
-   :target: http://travis-ci.org/treyhunner/names
-.. image:: https://coveralls.io/repos/treyhunner/names/badge.png?branch=master
-   :target: https://coveralls.io/r/treyhunner/names
-.. image:: https://pypip.in/v/names/badge.png
-   :target: https://crate.io/packages/names
-.. image:: https://pypip.in/d/names/badge.png
-   :target: https://crate.io/packages/names
 
-Random name generator
+Random name, username, email, phone, address, ipv4 generator
 
 
 Installation
 ------------
 
-The script is `available on PyPI`_.  To install with pip::
+install with pip::
 
-    pip install names
+    pip install data-dummy==0.1
 
 
 Usage
@@ -26,32 +18,23 @@ Usage
 
 Names can be used as a command line utility or imported as a Python package.
 
-Command Line Usage
-~~~~~~~~~~~~~~~~~~
-To use the script from the command line:
-
-.. code-block:: bash
-
-    $ names
-    John Powell
-
-Python Package Usage
-~~~~~~~~~~~~~~~~~~~~
 Here are examples of all current features:
 
 .. code-block:: pycon
-
-    >>> import names
-    >>> names.get_full_name()
-    u'Patricia Halford'
-    >>> names.get_full_name(gender='male')
-    u'Patrick Keating'
-    >>> names.get_first_name()
-    'Bernard'
-    >>> names.get_first_name(gender='female')
-    'Christina'
-    >>> names.get_last_name()
-    'Szczepanek'
+   
+    >>> import dummy
+    >>> dummy.name()
+    'Yuliana Sudradjat'
+    >>> dummy.username()
+    'Yuliana'
+    >>> dummy.email()
+    'Bernard@gmail.com'
+    >>> dummy.address()
+    'Jl. Dr A Rivai Bukittinggi Telp: 0752-21720'
+    >>> dummy.phone()
+    '+62812-0989-0128'
+    >>> dummy.ipv4()
+    '123.124.5.12'
 
 
 License
