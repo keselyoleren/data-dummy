@@ -1,10 +1,10 @@
-from __future__ import unicode_literals
+from __future__ import print_function
 from os.path import abspath, join, dirname
 import random
 
 
 __title__ = 'data dummy'
-__version__ = '0.1.2'
+__version__ = '1.0'
 __author__ = 'keselyoleren'
 __license__ = 'MIT'
 
@@ -17,12 +17,9 @@ FILES = {
 }
 
 def name():
-    rand = random.random() * 90
     with open(FILES['name']) as list_name:
-        for key, name in enumerate(list_name):
-            if key > rand:
-                return name.rstrip("\n").capitalize()
-        return ""
+        name = random.choice(list(list_name))
+        return name.rstrip("\n").capitalize()
 
 def username():
     get_name = name().split()
@@ -46,10 +43,6 @@ def ipv4():
     return '{}.{}.{}.{}'.format(w,x,y,z)
 
 def address():
-    rand = random.random() * 90
     with open(FILES['address']) as list_address:
-        for a, address in enumerate(list_address):
-            if rand > a:
-                return address.rstrip("\n")
-        return ""
-        
+        address = random.choice(list(list_address))
+        return address.rstrip("\n")

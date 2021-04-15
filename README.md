@@ -10,7 +10,7 @@ Installation
 
 install with pip::
 
-    pip install data-dummy==0.1.1
+    pip install data-dummy==1.0
 
 
 Usage
