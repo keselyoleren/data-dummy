@@ -4,7 +4,7 @@ import random
 
 
 __title__ = 'data dummy'
-__version__ = '0.1.0'
+__version__ = '0.1.2'
 __author__ = 'keselyoleren'
 __license__ = 'MIT'
 
