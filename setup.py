@@ -2,27 +2,21 @@ import dummy
 from setuptools import setup, find_packages
 
 
-# with open('README.rst') as readme_file:
-#     readme = readme_file.read()
+with open('README.md', encoding='utf-8') as readme_file:
+    readme = readme_file.read()
 
-# with open('CHANGES.rst') as changes_file:
-#     changes = changes_file.read()
-
-# with open('CONTRIBUTING.rst') as contributing_file:
-#     contributing = contributing_file.read()
 
 
 setup(
     name=dummy.__title__,
     version=dummy.__version__,
     author=dummy.__author__,
-    url="https://github.com/treyhunner/dummy",
+    url="https://github.com/keselyoleren/data-dummy",
     description="Generate random data dummy",
-    # long_description='\n\n'.join((
-    #     readme,
-    #     changes,
-    #     contributing,
-    # )),
+    long_description_content_type='text/markdown',
+    long_description='\n\n'.join((
+        readme,
+    )),
     license=dummy.__license__,
     packages=find_packages(),
     package_data={'dummy': ['dist.*']},

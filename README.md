@@ -10,7 +10,7 @@ Installation
 
 install with pip::
 
-    pip install data-dummy==0.1
+    pip install data-dummy==0.1.0
 
 
 Usage
@@ -36,7 +36,7 @@ Here are examples of all current features:
 License
 -------
 
-This project is released under an `MIT License`_.
+This project is released under an `MIT License`.
 
 
 Src data
@@ -47,5 +47,4 @@ Src data
 
 
 
-.. _mit license: http://th.mit-license.org/2013
-.. _available on PyPI: http://pypi.python.org/pypi/names/
+available on PyPI: https://pypi.org/project/data-dummy/

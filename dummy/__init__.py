@@ -4,7 +4,7 @@ import random
 
 
 __title__ = 'data dummy'
-__version__ = '0.1'
+__version__ = '0.1.0'
 __author__ = 'keselyoleren'
 __license__ = 'MIT'
 
@@ -21,7 +21,7 @@ def name():
     with open(FILES['name']) as list_name:
         for key, name in enumerate(list_name):
             if key > rand:
-                return name.capitalize()
+                return name.rstrip("\n").capitalize()
         return ""
 
 def username():
@@ -50,6 +50,6 @@ def address():
     with open(FILES['address']) as list_address:
         for a, address in enumerate(list_address):
             if rand > a:
-                return address
+                return address.rstrip("\n")
         return ""
         
