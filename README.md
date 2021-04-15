@@ -39,8 +39,8 @@ License
 This project is released under an `MIT License`_.
 
 
-Sourch
-------
+Src data
+--------
 
 - data.name (the following files are public domain in indonesia )
 - data.address (address of covid19 care referral hospital in indonesia)
