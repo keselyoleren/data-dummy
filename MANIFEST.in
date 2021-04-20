@@ -1,2 +1,2 @@
 include *.rst
-include dummy/data.address dummy/data.names
+include dummy/data.address dummy/data.names dummy/data.country

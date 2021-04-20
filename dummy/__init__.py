@@ -2,9 +2,8 @@ from __future__ import print_function
 from os.path import abspath, join, dirname
 import random
 
-
 __title__ = 'data dummy'
-__version__ = '1.0'
+__version__ = '1.1'
 __author__ = 'keselyoleren'
 __license__ = 'MIT'
 
@@ -14,6 +13,7 @@ full_path = lambda filename: abspath(join(dirname(__file__), filename))
 FILES = {
     'name': full_path('data.names'),
     'address': full_path('data.address'),
+    'countrys': full_path('data.country')
 }
 
 def name():
@@ -21,9 +21,14 @@ def name():
         name = random.choice(list(list_name))
         return name.rstrip("\n").capitalize()
 
+def country():
+    with open(FILES['countrys']) as list_country:
+        country = random.choice(list(list_country))
+        return country.rstrip("\n")
+
 def username():
     get_name = name().split()
-    username, *_ = get_name
+    username = get_name
     return username
 
 def email():
